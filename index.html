@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Cuaca</title>
+    <!-- Kamu bisa menambahkan CSS untuk styling di sini -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .data-section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Cuaca</h1>
+    
+    <div class="data-section">
+        <h2>Suhu Data</h2>
+        <p>Suhu Maksimum: <span id="suhu-max"></span> °C</p>
+        <p>Suhu Minimum: <span id="suhu-min"></span> °C</p>
+        <p>Suhu Rata-rata: <span id="suhu-rata"></span> °C</p>
+    </div>
+
+    <div class="data-section">
+        <h2>Detail Suhu Maksimum</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Suhu</th>
+                    <th>Kelembaban</th>
+                    <th>Kecerahan</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody id="detail-suhu-max"></tbody>
+        </table>
+    </div>
+
+    <div class="data-section">
+        <h2>Month-Year Suhu Maksimum</h2>
+        <ul id="month-year-max"></ul>
+    </div>
+
+    <!-- Tambahkan script di bawah ini -->
+    <script src="script.js"></script>
+</body>
+</html>
